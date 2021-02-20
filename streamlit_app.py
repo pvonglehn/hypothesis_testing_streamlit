@@ -77,7 +77,7 @@ def plot_sidebar(mu_A, mu_0, stddev, beta, alpha):
 
         st.sidebar.text(s)
 
-
+st.set_page_config(layout="wide")
 
 mu_0 = 0
 mu_A = 1
