@@ -52,7 +52,7 @@ explanation = r'''*$\alpha$*, also known as the significance level, is the proba
 
 *$\beta$* is the probability of committing a type II error - failing to reject the null hypothesis when it is false.   
 
-By playing around with the sliders on the left you can see that choosing the significance level involves a tradeoff between *$\alpha$* and *$\beta$* as reducing one will
+By playing around with the slider on the left you can see that choosing the significance level involves a tradeoff between *$\alpha$* and *$\beta$* as reducing one will
 cause an increase in the other.
 
 In this example the null hypothesis is that the data comes from a normal distribution with mean 1. The alternative hypothesis is that the mean is 0.'''

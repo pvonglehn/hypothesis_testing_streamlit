@@ -2,4 +2,6 @@ Interactive plots for exploring the tradeoff between type I and type II errors i
 
 Mostly to play around with streamlit
 
+You can view this app [here](https://share.streamlit.io/pvonglehn/hypothesis_testing_streamlit)
+
 
