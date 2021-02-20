@@ -64,14 +64,15 @@ def make_figure(dist_0, dist_A, stddev, q_alpha):
 
     st.pyplot(fig)
 
-def plot_sidebar(mu_A, mu_0, stddev, beta, alpha):
-    """Plot sidebar stats"""
+def make_sidebar(mu_A, mu_0, stddev, beta, alpha, q_alph):
+    """Make sidebar with parameter values"""
 
     for s in [
         f"Mu_0 = {mu_0}",
         f"Mu_A = {mu_A}",
         f"standard deviation = {stddev}",
         f"Alpha = {alpha:.4f}",
+        f"q_alpha = {q_alpha:.4f}",
         f"Beta = {beta:.4f}",
         f"Power = {1 - beta:.4f}"]:
 
@@ -90,7 +91,7 @@ dist_0, dist_A = get_distributions(mu_0, mu_A, stddev)
 alpha, q_alpha, beta = get_parameters(dist_0, dist_A)
 
 make_figure(dist_0, dist_A, stddev, q_alpha)
-plot_sidebar(mu_A, mu_0, stddev, beta, alpha)
+make_sidebar(mu_A, mu_0, stddev, beta, alpha, q_alpha)
 
 
 explanation = rf'''$\alpha$, also known as the significance level, is the probability of committing a type I error - 
